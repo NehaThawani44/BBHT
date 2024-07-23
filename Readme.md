@@ -61,11 +61,11 @@ Login: /api/authenticate (POST)
 
 ###### Create a Claim
 ```
-POST /api/claims
+POST /customer-claims
 Content-Type: application/json
 
 {
-    "claimantName": "John Doe",
+    "claimantName": "Neha Thawani",
     "policyNumber": "PN123456",
     "description": "Accident damage",
     "status": "Pending"
