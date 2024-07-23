@@ -23,20 +23,22 @@ The Claim Service is a Spring Boot application designed to manage insurance clai
 ## Setup
 
 ### Prerequisites
-- Java 11 or higher
-- Maven 3.6.3 or higher
+- Java 21 
+- IntelliJ or Eclipse
+
 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/claim-service.git
-   cd claim-service
-   ´´´´´´´´´´´
+   git clone https://github.com/NehaThawani44/BBHT
+   cd insurance
+   
 
 2.Build the project:
-    ```
+``````
 mvn clean install
-```
+
+`````````
 3.Run the application:
 
 ```
@@ -48,16 +50,19 @@ mvn spring-boot:run
 ### Usage
 #### Endpoints
 ##### Authentication
+````
 Login: /api/authenticate (POST)
+
 ##### Claims
-Create Claim: /api/claims (POST)
-Get Claim by ID: /api/claims/{id} (GET)
-Get All Claims: /api/claims (GET)
-Update Claim Status: /api/claims/{id} (PUT)
-Delete Claim: /api/claims/{id} (DELETE)
-Bulk Create Claims: /api/claims/bulk (POST)
+* Create Claim: /customer-claims (POST)
+* Get Claim by ID: /customer-claims/{id} (GET)
+* Get All Claims: /customer-claims (GET)
+* Update Claim Status: /customer-claims/{id} (PUT)
+* Delete Claim: /customer-claims/{id} (DELETE)
+* Bulk Create Claims: /customer-claims/multiple (POST)
 #### Example Request
-######Create a Claim
+
+###### Create a Claim
 ```
 POST /api/claims
 Content-Type: application/json
@@ -79,9 +84,10 @@ POST /api/authenticate
 Content-Type: application/json
 
 {
-    "username": "yourusername",
-    "password": "yourpassword"
+    "username": "test",
+    "password": "password"
 }
+```
 ##### Example Authenticated Request
 ```
 GET /api/claims
@@ -92,6 +98,7 @@ Testing
 bash
 ```
 mvn test
+``
 
 #### License
 This project is licensed under the MIT License - see the LICENSE file for details.
