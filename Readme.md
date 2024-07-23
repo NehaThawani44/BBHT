@@ -43,16 +43,13 @@ mvn clean install
 
 ```
 mvn spring-boot:run
-
-
-
-
+`````
 ### Usage
 #### Endpoints
 ##### Authentication
 ````
 Login: /api/authenticate (POST)
-
+`````
 ##### Claims
 * Create Claim: /customer-claims (POST)
 * Get Claim by ID: /customer-claims/{id} (GET)
@@ -90,13 +87,11 @@ Content-Type: application/json
 ```
 ##### Example Authenticated Request
 ```
-GET /api/claims
+GET /customer-claim
 Authorization: Bearer your.jwt.token.here
 ````
 Testing
 ##### Run tests using Maven:
-
-bash
 ```
 mvn test
 ````
