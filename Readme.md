@@ -77,7 +77,7 @@ The application uses JWT for authentication. After logging in, you will receive 
 
 Example Login Request
 ```
-POST /api/authenticate
+POST  /customer-claims/authenticate
 Content-Type: application/json
 
 {
@@ -87,7 +87,7 @@ Content-Type: application/json
 ```
 ##### Example Authenticated Request
 ```
-GET /customer-claim
+GET /customer-claims
 Authorization: Bearer your.jwt.token.here
 ````
 Testing
