@@ -92,14 +92,14 @@ Content-Type: application/json
 ```
 GET /api/claims
 Authorization: Bearer your.jwt.token.here
+````
 Testing
 ##### Run tests using Maven:
 
 bash
 ```
 mvn test
-``
-
+````
 #### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
